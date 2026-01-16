@@ -1,0 +1,25 @@
+window {
+    background-color: #282828;
+    border-radius: 0;
+}
+
+button:hover {
+    border-color: #ebdbb2;
+    border-radius: 0;
+}
+
+button:hover>image {
+    border-radius: 0;
+}
+
+.highlighted-button {
+    background-image: none;
+    box-shadow: none;
+    background-color: #282828;
+    border-radius: 0;
+}
+
+.highlighted-button>image, .highlighted-button:hover>image {
+    -gtk-icon-effect: highlight;
+    border-radius: 0;
+}
