@@ -1,0 +1,61 @@
+@import url("colors.css");
+
+* {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 11px;
+}
+
+.modules-left {
+    margin-left: 0px;
+}
+
+.modules-right {
+    margin-right: 0px;
+}
+
+#custom-expand-icon{
+	color: @window_bg_color;
+	background-color: @window_fg_color;
+}
+
+#workspaces button {
+    all: initial;
+    padding: 0 6px;
+    margin: 0 1.5px;
+    min-width: 9px;
+}
+
+#workspaces button.empty {
+    opacity: 0.5;
+}
+
+#tray,
+#cpu,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#custom-update {
+    min-width: 12px;
+    margin: 0 7.5px;
+}
+
+tooltip {
+    padding: 2px;
+}
+
+#custom-update {
+    font-size: 10px;
+}
+
+#clock {
+    margin-left: 8.75px;
+}
+
+.hidden {
+    opacity: 0;
+}

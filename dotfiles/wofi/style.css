@@ -1,0 +1,40 @@
+@import url(".config/wofi/colors.css");
+
+
+
+window {
+    margin: 0px;
+    border: 0.5px solid @window_fg_coloree;
+    background-color: @window_bg_color;
+    font-family: Cousine Nerd Font;
+    border-radius: 0px;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: @window_fg_color;
+    background-color: @window_bg_color;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: @window_bg_color;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: @window_bg_color;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: @window_fg_color;
+}
+
+#entry:selected {
+    background-color: @window_bg_color;
+}

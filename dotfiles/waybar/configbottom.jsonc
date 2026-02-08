@@ -1,0 +1,24 @@
+{
+  "reload_style_on_change": true,
+  "layer": "top",
+  "position": "bottom",
+  "spacing": 5,
+  "height": 34,
+
+  "modules-left": ["custom/wofi", "wlr/taskbar",],
+
+  "custom/wofi": {
+    "interval": 5,
+    "format": "  󰀻 ",
+    "on-click": "wofi --show drun --prompt Find..."},
+
+  "custom/firefox": {
+    "interval": 5,
+    "format": " 󰈹 ",
+    "on-click": "firefox"},
+
+  "custom/kitty": {
+    "interval": 5,
+    "format": "  ",
+    "on-click": "kitty"},
+},
