@@ -1,8 +1,0 @@
-@import url("colors.css");
-
-*{
-    border-top: 1px solid @window_fg_color;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-}
