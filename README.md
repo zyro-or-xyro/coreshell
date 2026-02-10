@@ -5,6 +5,7 @@ DEPS:
 ```bash
 swww
 awww
+eza
 fastfetch
 waybar
 nwg-bar
