@@ -235,9 +235,6 @@ binds {
     Mod+Tab { focus-workspace-previous; }
 
     Mod+Shift+S { spawn "flameshot" "gui"; }
-
-    Mod+Shift+Alt+R { spawn "ignis" "run-command" "recorder-record-screen"; }
-    Mod+Alt+R { spawn "ignis" "run-command" "recorder-record-portal"; }
 }
 
 overview {
@@ -249,10 +246,9 @@ hotkey-overlay {
     skip-at-startup
 }
 
-spawn-at-startup "swaybg"
 spawn-at-startup "swww-daemon"
 
-// Put swaybg inside the overview backdrop.
+// Put awww inside the overview backdrop.
 layer-rule {
     match namespace="^wallpaper$"
     place-within-backdrop true
