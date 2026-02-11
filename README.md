@@ -20,4 +20,5 @@ rm -rf btop kitty niri waybar wofi fastfetch matugen nwg-bar waypaper
 cd ~/coreshell/dotfiles
 mv -r * ~/.config
 cd ..
-mv .zshrc ~/```
+mv .zshrc ~/
+```
