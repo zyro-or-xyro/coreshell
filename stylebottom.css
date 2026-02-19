@@ -1,0 +1,16 @@
+@import url("colors.css");
+
+window#waybar {
+	background-color: transparent;
+}
+
+.modules-center {
+    border: 0.5px solid @window_fg_color;
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 16px;
+    margin-bottom: 8px;
+}
