@@ -2,7 +2,7 @@
 An simple and lightweight dotfile for Niri Arch-based GNU/Linux distributions
 
 DEPS:
-```bash
+```txt
 swww
 awww
 eza
@@ -11,6 +11,7 @@ waybar
 nwg-bar
 waypaper
 wofi
+ttf-jetbrains-mono-nerd
 ```
 Recommended install (backup first, this overwrites your existing dotfiles)
 ```bash
