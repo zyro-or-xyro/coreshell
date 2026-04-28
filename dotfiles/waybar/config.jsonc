@@ -114,7 +114,7 @@
     "modules": ["custom/expand-icon", "tray"],
   },
   "custom/expand-icon": {
-    "format": "    ",
+    "format": "    ",
     "on-click": "nwg-bar",
     "tooltip": false,
   },

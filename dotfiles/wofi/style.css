@@ -4,7 +4,7 @@
 
 window {
     margin: 0px;
-    border: 0.5px solid @window_fg_coloree;
+    /* border: 0.5px solid @window_fg_coloree; */
     background-color: @window_bg_color;
     font-family: Cousine Nerd Font;
     border-radius: 0px;

@@ -1,15 +1,33 @@
 spawn-at-startup "waybar" "-c" ".config/waybar/configbottom.jsonc" "-s" ".config/waybar/stylebottom.css"
+spawn-at-startup "pipewire"
+spawn-at-startup "pipewire-pulse"
+spawn-at-startup "wireplumber"
 spawn-at-startup "waybar"
+
+layer-rule {
+	match layer="top"
+	match layer="overlay"
+	exclude namespace="swaync-notification-window"
+	opacity 0.9
+	shadow {
+		off
+	}
+	background-effect {
+		xray true
+		blur true
+		noise 0
+		saturation 2
+	}
+}
 
 gestures {
     hot-corners {
         off
     }
 }
-
 layout {
     gaps 8
-    background-color "#0e0e0e"
+    background-color "#0e0e0e00"
     always-center-single-column false
     center-focused-column "never"
 
@@ -210,31 +228,21 @@ binds {
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
 
-    // Consume one window from the right to the bottom of the focused column.
     Mod+Comma  { consume-window-into-column; }
-    // Expel the bottom window from the focused column to the right.
     Mod+Period { expel-window-from-column; }
-
     Mod+D { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+C { center-column; }
-
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
-
-    // Finer height adjustments when in column with other windows.
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
-
-    // Move the focused window between the floating and the tiling layout.
     Mod+V       { toggle-window-floating; }
-
     Mod+Tab { focus-workspace-previous; }
-
-    Mod+Shift+S { spawn "flameshot" "gui"; }
+    Mod+Shift+S { screenshot; }
 }
 
 overview {
@@ -248,13 +256,8 @@ hotkey-overlay {
 
 spawn-at-startup "swww-daemon"
 
-// Put awww inside the overview backdrop.
 layer-rule {
-    match namespace="^wallpaper$"
-    place-within-backdrop true
-}// Put swaybg inside the overview backdrop.
-layer-rule {
-    match namespace="^wallpaper$"
+    match namespace="^swww-daemon$"
     place-within-backdrop true
 }
 
